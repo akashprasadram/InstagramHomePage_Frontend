@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Initaling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #fafafa !important;
+  position: relative;
+  font-family: "roboto", sans-serif;
+}
+
+/* -----------Code------------- */
+
+/* Upload */
+.upload-show {
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+/* Navbar */
+.topnav {
+  position: -webkit-sticky;
+  top: 0 !important;
+  z-index: 1 !important;
+  position: sticky !important;
+  background: #fff !important;
+  height: 60px !important;
+  border-bottom: 1px solid #dfdfdf;
+  justify-content: space-around !important;
+}
+
+/* nav-wrapper */
+.nav-wrapper {
+  height: 100% !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+/* Search-box */
+.search-box {
+  width: 250px !important;
+  background: #fafafa !important;
+}
+
+.search-box:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #fafafa;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 830px) {
+  .search-box {
+    width: 180px !important;
+  }
+  .left-col {
+    width: 90% !important;
+  }
+  .right-col {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .search-bar > .search-box {
+    display: none !important;
+  }
+  .right-col {
+    display: none;
+  }
+}
+
+/* profile icon */
+.user-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("photo/person.png");
+  background-size: cover;
+}
+
+.user-profile:active,
+.user-profile:hover,
+.user-profile:focus {
+  border: 1px solid black;
+}
+
+/* Container */
+.container {
+  justify-content: space-around !important;
+  padding: 30px 0 0 0 !important;
+}
+
+/* Left Side pannel*/
+.left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Status */
+.status-wrapper {
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  padding: 10px;
+  padding-right: 0;
+  padding-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.status-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/* .status-wrapper::-webkit-scrollbar-button{
+    background-color: #bbbbbb;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px;
+} */
+.status-card {
+  flex: 0 0 auto;
+  width: 80px;
+  max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 2px;
+  background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.username {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(185, 104, 104, 0.5);
+}
+
+/*Post*/
+.post {
+  width: 100% !important;
+  height: auto;
+  background: #fff !important;
+  border: 1px solid #dfdfdf !important;
+  margin-top: 40px !important;
+}
+.info {
+  width: 100%;
+  height: 60px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px !important;
+  flex: none !important;
+}
+
+.info .username {
+  width: auto;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.info .options {
+  display: inline-block;
+  height: 10px;
+  cursor: pointer;
+}
+
+.info .user {
+  display: flex;
+  align-items: center;
+}
+
+.info .profile-pic {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background: none;
+}
+
+.info .profile-pic img {
+  border: none;
+}
+
+.post-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* post Image */
+.post-content {
+  width: 100%;
+  padding: 20px 20px 0 20px !important;
+  flex: none !important;
+}
+
+/* comment & likes */
+.likes {
+  font-weight: bold;
+}
+
+.description {
+  margin: 10px 0 !important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.description span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.post-time {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.likes {
+  margin-bottom: 0px !important;
+}
+
+/* Recation wrapper */
+.reaction-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+}
+
+.reaction-wrapper .icon {
+  height: 20px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.save {
+  margin-left: auto !important;
+  float: left;
+}
+
+/* add comment*/
+.comment-wrapper {
+  flex: none !important;
+  width: 100%;
+  height: 50px;
+  border-radius: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-wrapper .icon {
+  height: 30px;
+}
+
+.comment-box {
+  width: 80%;
+  height: 100%;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-btn,
+.action-btn {
+  width: 70px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: rgb(0, 162, 255);
+  opacity: 0.5;
+}
+
+/* Right Side Panel */
+.right-col {
+  padding: 20px;
+  position: relative !important;
+}
+.right-panel {
+  position: fixed !important;
+}
+.profile-card {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background: none !important;
+  border: none !important;
+}
+.profile-card .profile-pic {
+  flex: 0 0 auto;
+  padding: 0;
+  background: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-card:first-child .profile-pic {
+  width: 70px;
+  height: 70px;
+}
+
+.profile-card .profile-pic .img {
+  border: none;
+}
+
+.profile-card .username {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 0 !important;
+}
+
+.sub-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.action-btn {
+  opacity: 1;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.suggestion-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 540px) {
+  .topnav {
+    padding-right: 12px !important;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .right-col {
+    display: none !important;
+  }
+}

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Initaling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #fafafa !important;
+  position: relative;
+  font-family: "roboto", sans-serif;
+}
+
+/* -----------Code------------- */
+
+/* Upload */
+.upload-show {
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+/* Navbar */
+.topnav {
+  position: -webkit-sticky;
+  top: 0 !important;
+  z-index: 1 !important;
+  position: sticky !important;
+  background: #fff !important;
+  height: 60px !important;
+  border-bottom: 1px solid #dfdfdf;
+  justify-content: space-around !important;
+}
+
+/* nav-wrapper */
+.nav-wrapper {
+  height: 100% !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+/* Search-box */
+.search-box {
+  width: 250px !important;
+  background: #fafafa !important;
+}
+
+.search-box:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #fafafa;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 830px) {
+  .search-box {
+    width: 180px !important;
+  }
+  .left-col {
+    width: 90% !important;
+  }
+  .right-col {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .search-bar > .search-box {
+    display: none !important;
+  }
+  .right-col {
+    display: none;
+  }
+}
+
+/* profile icon */
+.user-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-fit: cover;
+  padding: 1px;
+  border: 1px solid #fff;
+}
+
+.user-profile:active {
+  border: 1px solid black;
+}
+
+.nav-icon {
+  font-size: 30px;
+  color: black;
+}
+
+.dropdown-options {
+  display: none;
+  background-color: #fff;
+  position: absolute !important;
+  width: 220px !important;
+  z-index: 10;
+  border: 2px groove rgba(0, 0, 0, 0.1) !important;
+  margin-top: -3 !important;
+  right: 0 !important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 540px) {
+  .topnav {
+    padding-right: 12px !important;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+}

@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Initaling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #fafafa !important;
+  position: relative;
+  font-family: "roboto", sans-serif;
+}
+
+/* -----------Code------------- */
+
+/* Upload */
+.upload-show {
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+/* Navbar */
+.topnav {
+  position: -webkit-sticky;
+  top: 0 !important;
+  z-index: 1 !important;
+  position: sticky !important;
+  background: #fff !important;
+  height: 60px !important;
+  border-bottom: 1px solid #dfdfdf;
+  justify-content: space-around !important;
+}
+
+/* nav-wrapper */
+.nav-wrapper {
+  height: 100% !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+/* Search-box */
+.search-box {
+  width: 250px !important;
+  background: #fafafa !important;
+}
+
+.search-box:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #fafafa;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 830px) {
+  .search-box {
+    width: 180px !important;
+  }
+  .left-col {
+    width: 90% !important;
+  }
+  .right-col {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .search-bar > .search-box {
+    display: none !important;
+  }
+  .right-col {
+    display: none;
+  }
+}
+
+/* profile icon */
+.user-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("photo/person.png");
+  background-size: cover;
+}
+
+.user-profile:active,
+.user-profile:hover,
+.user-profile:focus {
+  border: 1px solid black;
+}
+
+/* --------------------------------Main Sesction ---------------------------------*/
+/* .profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.username {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(185, 104, 104, 0.5);
+}
+
+.post {
+  width: 100% !important;
+  height: auto;
+  margin-top: 40px !important;
+}
+
+.info .username {
+  width: auto;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  margin-left: 20%;
+  margin-top: 1%;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.info {
+  width: 100%;
+}
+
+.info .user {
+  display: flex;
+  margin: 0 0 0 15%;
+}
+
+.info .profile-pic {
+  height: 150px;
+  width: 150px;
+  padding: 0;
+  background: none;
+}
+
+.info .profile-pic img {
+  border: none;
+}
+
+.post-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.settingbtn-container {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.settingbtn {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  padding: 2px 6px;
+}
+
+
+@media only screen and (max-width: 540px) {
+  .topnav {
+    padding-right: 12px !important;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .right-col {
+    display: none !important;
+  }
+  .info .user {
+    margin: 0 2px 0 5px;
+  }
+  .info .profile-pic {
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    background: none;
+  }
+} */
+
+/*---------------------------------------------------------*/
+.profile-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: none;
+  margin-left: 15%;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.leftside {
+  margin-left: 10%;
+  margin-top: 1%;
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+}
+.setting {
+  display: flex;
+}
+.bottom-panel {
+  display: flex;
+}
+.username {
+  width: auto;
+  font-weight: bold;
+  color: #000;
+  font-size: 28px;
+}
+
+.settingbtn-container {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.settingbtn {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  padding: 2px 6px;
+}
+
+.setting-icon {
+  margin-top: 1%;
+  margin-left: 2%;
+  font-size: 25px;
+}
+
+.text-style {
+  padding: 0 5% 0 0;
+}
+.total {
+  font-weight: bold;
+}
+
+.line {
+  width: 80%;
+  margin: 40px auto 0px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hidden-line {
+  display: none;
+}
+
+.tags {
+  justify-content: center;
+  margin-top: -1;
+}
+.tag {
+  margin: 0 3% 0 0;
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.active,
+.tag:active {
+  color: black;
+  border-top: 1px solid black;
+}
+
+.post-body {
+  margin: 20px auto 0px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-body img {
+  width: 300px;
+  height: 280px;
+  margin: 2% 0 0 3%;
+}
+@media only screen and (max-width: 730px) {
+  .post-body img {
+    width: 200px;
+    height: 200px;
+    margin: 2% 1% 0 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .topnav {
+    padding-right: 12px !important;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .right-col {
+    display: none !important;
+  }
+  .setting-icon {
+    display: none;
+  }
+
+  .settingbtn-container {
+    margin-top: 2%;
+  }
+  .settingbtn {
+    width: 60%;
+  }
+  .setting {
+    display: block;
+  }
+  .profile-pic {
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    background: none;
+    margin-left: 5%;
+  }
+  .bottom-panel {
+    display: flex !important;
+    align-self: baseline;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    right: 20%;
+  }
+  .hidden-line {
+    display: block;
+    align-self: baseline;
+    position: relative;
+    width: 170%;
+    padding: 0%;
+    right: 55%;
+    margin-bottom: 4%;
+  }
+  .main > .line {
+    margin-top: 2%;
+    width: 120%;
+  }
+  .tags {
+    justify-content: space-around;
+  }
+  .tag {
+    font-size: 22px;
+    margin: 1% 0;
+  }
+  .Tag-Text {
+    display: none;
+  }
+
+  .active,
+  .tag:active {
+    color: blue;
+    border-top: none;
+  }
+
+  .post-body {
+    margin: 20px 0px 0px 1%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .post-body img {
+    width: 155px;
+    height: 132px;
+    margin: 2% 1% 0 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .post-body {
+    margin: 20px 0px 0px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .post-body img {
+    width: 116px;
+    height: 110px;
+    margin: 2% 1% 0 0;
+  }
+}
